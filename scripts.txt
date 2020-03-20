@@ -1,0 +1,39 @@
+1. Start training
+python main.py -mo train -mn MobileNet_V2
+
+2. Predict certain DICOM file using MobileNet_V2
+python main.py -mo test -mn MobileNet_V2 -tdf data/axial/chest/1/000005.dcm -ver 0
+
+3. Predict certain DICOM file using MobileNet_V2_aug
+python main.py -mo test -mn MobileNet_V2_aug \
+-tdf data/axial/chest/1/000005.dcm \
+data/coronal_sagittal/abdomen_chest/80252-COR-46881/000022.dcm -ver 2 -tta
+
+4. Predict default TEST_DCM_FILES using Custom_V1 model
+python main.py -mo test -mn Custom_V1 -ver 2
+
+5. Predict three DICOM files Inception_V3
+python main.py -mo test -mn Inception_V3 -tdf data/axial/abdomen/2-CHEST  2.0  B30f  SOFT TISSUE-76484/000015.dcm \
+data/axial/chest/3-ChestAbdPel.  5.0  B30f  SOFT TISS-67746/000033.dcm \
+data/axial/pelvis/06-01-2013-RECTUM-13712/56822-NewSimCT-54038/000006.dcm -ver 0
+
+6. Predict low-frequency DICOMs by EfficientNet_B7
+python main.py -mo test -mn EfficientNet_B7 \
+-tdf data/coronal_sagittal/chest/603-2X2\ SAG-90491/000015.dcm \
+data/coronal_sagittal/abdomen_chest/80252-COR-46881/000022.dcm \
+data/coronal_sagittal/abdomen_chest_pelvis/601-Sags\ 2x2-31023/000044.dcm \
+-ver 2
+
+7. Predict low-frequency DICOMs by Inception_ResNet_v2 with TTA
+python main.py -mo test -mn Inception_ResNet_v2 \
+-tdf data/coronal_sagittal/chest/603-2X2\ SAG-90491/000015.dcm \
+data/coronal_sagittal/abdomen_chest/80252-COR-46881/000022.dcm \
+data/coronal_sagittal/abdomen_chest_pelvis/601-Sags\ 2x2-31023/000044.dcm \
+-ver 2 -tta
+
+7. Predict low-frequency DICOMs by Inception_ResNet_v2 with TTA and quiet verbosity mode
+python main.py -mo test -mn Inception_V3 \
+-tdf data/coronal_sagittal/chest/603-2X2\ SAG-90491/000015.dcm \
+data/coronal_sagittal/abdomen_chest/80252-COR-46881/000022.dcm \
+data/coronal_sagittal/abdomen_chest_pelvis/601-Sags\ 2x2-31023/000044.dcm \
+-ver 0 -tta
