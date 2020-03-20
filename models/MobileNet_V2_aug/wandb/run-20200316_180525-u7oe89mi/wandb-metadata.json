@@ -1,0 +1,29 @@
+{
+    "root": "/media/viacheslav/Dropbox/Python projects/mlc",
+    "program": "main.py",
+    "codePath": "main.py",
+    "startedAt": "2020-03-16T18:05:25.915136",
+    "host": "MDDL",
+    "username": "viacheslav",
+    "executable": "/home/viacheslav/.conda/envs/ml/bin/python",
+    "os": "Linux-5.3.0-40-generic-x86_64-with-debian-buster-sid",
+    "python": "3.6.9",
+    "gpu": "GeForce RTX 2080 Ti",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": "10.0.130",
+    "args": [
+        "-mo",
+        "train",
+        "-mn",
+        "MobileNet_V2",
+        "-isa"
+    ],
+    "state": "finished",
+    "jobType": null,
+    "mode": "run",
+    "name": "MobileNet_V2_1703_0105",
+    "project": "mlc",
+    "heartbeatAt": "2020-03-16T20:00:36.333628",
+    "exitcode": 0
+}

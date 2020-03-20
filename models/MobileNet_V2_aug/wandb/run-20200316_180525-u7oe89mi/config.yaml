@@ -1,0 +1,56 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.8.29
+    code_path: code/main.py
+    framework: tensorflow
+    is_jupyter_run: false
+    python_version: 3.6.9
+batch_size:
+  desc: null
+  value: 64
+buffer_size:
+  desc: null
+  value: 1000
+epochs:
+  desc: null
+  value: 100
+filter_rate:
+  desc: null
+  value: 8
+img_size:
+  desc: null
+  value:
+  - 224
+  - 224
+  - 3
+kernel_size:
+  desc: null
+  value:
+  - 3
+  - 3
+learning_rate:
+  desc: null
+  value: 1.0e-05
+model_dir:
+  desc: null
+  value: models/MobileNet_V2_1703_0105
+model_name:
+  desc: null
+  value: MobileNet_V2
+optimizer:
+  desc: null
+  value: radam
+pool_size:
+  desc: null
+  value:
+  - 2
+  - 2
+pretrained:
+  desc: null
+  value: true
+trainable_backbone:
+  desc: null
+  value: false
