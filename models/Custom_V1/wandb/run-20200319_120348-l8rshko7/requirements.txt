@@ -70,7 +70,7 @@ mkl-random==1.1.0
 mkl-service==2.3.0
 mock==2.0.0
 murmurhash==1.0.2
-nbconvert==5.4.1
+nbconvert==6.3.0
 nbformat==4.4.0
 networkx==2.2
 nibabel==2.4.0
