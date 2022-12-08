@@ -10,7 +10,7 @@ blessings==1.7
 blis==0.2.4
 bottleneck==1.2.1
 cachetools==3.1.1
-certifi==2019.11.28
+certifi==2022.12.7
 chardet==3.0.4
 click==7.0
 configparser==4.0.2
